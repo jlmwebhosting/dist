@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<title><module> unit test</title>
 
-		<title>test:<module></title>
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
 
-		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./<module>.deploy.js"></script>
 	</head>
 
 	<body>
-		<div id="mocha"></div>
+		<div id="qunit"></div>
 
-		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
-
-		<script type="application/javascript">
-			mocha.setup( "bdd" );
-		</script>
-
-		<script type="application/javascript" src="./test.deploy.js"></script>
+		<div id="qunit-fixture"></div>
 
 		<script type="application/javascript">
-			mocha.run( );
+			QUnit.test( "<module> unit test", function( assert ) {
+
+				
+
+			} );
 		</script>
 	</body>
 </html>
